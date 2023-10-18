@@ -1,0 +1,20 @@
+﻿@model Personagem
+
+@{
+    ViewData["Title"] = "Churros";
+}
+
+<h1>Edição de Personagem</h1>
+
+<a asp-action="Index">Lista de Personagem</a>
+
+<form asp-action="editar">
+   
+    <!--Importar o conteúdo do _Form.cshtml-->
+    <partial name="_Form" />
+
+    <churros texto="Editar"></churros>    
+</form>
+
+
+    

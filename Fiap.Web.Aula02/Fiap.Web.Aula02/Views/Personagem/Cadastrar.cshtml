@@ -1,0 +1,19 @@
+﻿@model Personagem
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastro de Personagem</h1>
+
+<alert mensagem="@TempData["msg"]"></alert>
+
+<a asp-action="Index">Lista de Personagem</a>
+
+<form asp-action="cadastrar">
+    
+    <partial name="_Form" />
+
+    <churros></churros>
+</form>
+

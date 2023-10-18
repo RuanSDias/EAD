@@ -1,0 +1,24 @@
+﻿@model Paciente
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+<a asp-action="Index">Lista de Pacientes</a>
+
+@if(TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        TempData["msg"]
+    </div>
+}
+
+<form asp-action="editar">
+    <partial name="_Form"></partial>
+    <input asp-for="PacienteId"/>
+    <div>
+        <button class="btn btn-outline-success">Salvar Alterações</button>
+    </div>
+</form>

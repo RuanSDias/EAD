@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastrar</h1>
+
+@if(TempData["msg"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["msg"]
+    </div>
+}
+
+<form asp-action="cadastrar">
+    <partial name="_Form"/>
+    <div>
+        <button class="btn btn-outline-success">Cadastrar</button>
+    </div>
+</form>
+
